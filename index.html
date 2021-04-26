@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./portfolio.css">
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Medium</a>
+            <a href="#">UX/UI</a>
+            <a href="#">Projects</a>
+        </div>
+
+        <div id="main">
+            <div style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">
+                &#9776;</div>
+                <div class="header-info">
+                    <div id="svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 106 106" version="1.1" viewBox="0 0 106 106" x="0px" xml:space="preserve" y="0px" style="fill: rgb(0, 0, 0);" role="img">
+                            <g>
+                                <linearGradient gradientUnits="userSpaceOnUse" id="__id42_s4smze6heu" x2="106.01" y1="53.005" y2="53.005">
+                                    <stop offset="0" style="stop-color: rgb(92, 225, 230);"></stop>
+                                    <stop offset=".9898" style="stop-color: rgb(255, 181, 0);"></stop>
+                                </linearGradient>
+                                <path d="m53 106c-29.2 0-53-23.8-53-53s23.8-53 53-53c29.2 0 53 23.8 53 53s-23.8 53-53 53zm0-96c-23.7 0-43 19.3-43 43s19.3 43 43 43 43-19.3 43-43-19.3-43-43-43z" style="fill: url(&quot;#__id42_s4smze6heu&quot;);"></path>
+                            </g>
+                            </svg>
+                    </div>
+                  
+                        <div>
+                            <h1>Gary Stroup</h1>
+                            <p>Front-End Developer | UX/UI Designer</p>
+                        </div>
+                </div>
+             
+        </div>
+        
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width ="300px";
+                document.getElementById("main").style.marginLeft = "300px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width="0";
+                document.getElementById("main").style.marginLeft ="0";
+
+            }
+        </script>
+    </body>
+</html>

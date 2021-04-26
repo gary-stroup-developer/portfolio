@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: black;
+    background-image: url("./gary.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-attachment: fixed;
+    background-size: contain;
+  
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(199, 198, 198);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+.header-info {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#svg {
+    display: flex;
+}
+
+svg {
+    width: 20vw;
+    height: auto;
+}
+
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #FAFAFA;
+    font-size: 6vw;
+    margin-bottom: 0;
+}
+p {
+   
+    text-align: center;
+    color: #FAFAFA;
+    font-size: 3.5vw;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 62px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ffffff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right:25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .header-info {
+        margin-top: 15vh;
+    }
+  
+}
+@media screen and (max-width: 1200px) {
+    .header-info {
+        margin-top: 35vh;
+    }
+  
+}
+
+@media screen and (max-width: 1050px) {
+    .header-info {
+        margin-top: 48vh;
+    }
+  
+}
+
+@media screen and (max-width: 415px) {
+    
+    .header-info {
+        margin-top: -5vh;
+    }
+  
+}
+
+
+
+
+
