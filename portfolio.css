@@ -27,7 +27,7 @@ body {
 #main {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     transition: margin-left 0.5s;
     padding: 16px;
 }
@@ -100,18 +100,23 @@ p {
 
 @media screen and (max-width: 1050px) {
     .header-info {
-        margin-top: 48vh;
+        margin-top: 46vh;
     }
   
 }
 
+
 @media screen and (max-width: 415px) {
     
     .header-info {
-        margin-top: -5vh;
+        position: absolute;
+        top: -43%;
+        left: 20%;
     }
   
 }
+
+
 
 
 
